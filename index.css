@@ -1,0 +1,54 @@
+.inner-wrapper {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    color: grey;
+    padding-top: 3rem;
+}
+
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    padding: 5px;
+}
+
+img {
+    display: block;
+}
+
+.subgallery {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.subgallery.active {
+    display: block;
+}
+
+button {
+    position: absolute;
+    right: 10px;
+    text-transform: uppercase;
+    color: white;
+    background: none;
+    border: none;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.subgallery .inner-wrapper img {
+    /* width: 750px;
+    height: 500px; */
+}
