@@ -27,6 +27,7 @@ window.addEventListener('click', function (event) {
             fetch(textPath + 'description.txt')
                 .then(Response => Response.text())
                 .then(data => descript.innerText = data);
+            subGalleryInnerHolder.append(descript);
         }
     }
 });

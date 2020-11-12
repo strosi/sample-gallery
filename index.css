@@ -48,7 +48,6 @@ button {
     cursor: pointer;
 }
 
-.subgallery .inner-wrapper img {
-    /* width: 750px;
-    height: 500px; */
+.subgallery .inner-wrapper p {
+    color: white;
 }
