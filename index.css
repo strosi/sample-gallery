@@ -13,6 +13,7 @@ h1 {
 .flex-gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery-item {
@@ -28,13 +29,17 @@ img {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;    
+    left: 0;
     display: none;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .subgallery.active {
     display: block;
+}
+
+.noscroll {
+    overflow: hidden;
 }
 
 button {
@@ -48,6 +53,49 @@ button {
     cursor: pointer;
 }
 
-.subgallery .inner-wrapper p {
-    color: white;
+.subgallery p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.subgallery>.inner-wrapper {
+    overflow-x: auto;
+    max-width: 90%;
+    height: 90%;
+    background-color: white;
+    margin-top: 4rem;
+}
+
+.subgallery .content-holder {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.subgallery .inner-wrapper .project-images img {
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.description .titles h2, 
+.description .titles p {
+    margin: 0;
+}
+
+.subgallery .inner-wrapper .project-images img, 
+.subgallery .inner-wrapper .description {
+    margin: 3rem auto;
+}
+
+.subgallery .inner-wrapper .description .titles {
+    width: 40%;
+}
+
+.subgallery .inner-wrapper .description .text {
+    width: 60%;
 }
