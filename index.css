@@ -42,28 +42,38 @@ img {
     overflow: hidden;
 }
 
-button {
-    position: absolute;
-    right: 10px;
+.subgallery .subgallery-navi {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    width: 90%;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+}
+
+.subgallery button {
     text-transform: uppercase;
     color: white;
     background: none;
     border: none;
-    padding: 20px 10px;
     cursor: pointer;
 }
 
-.subgallery p {
-    font-size: 1.2em;
-    line-height: 1.5em;
+.subgallery button:focus {
+    outline: none;
+}
+
+.subgallery button.noActiveBtn {
+    color: grey;
+    cursor: default;
 }
 
 .subgallery>.inner-wrapper {
     overflow-x: auto;
-    max-width: 90%;
+    max-width: 1200px;
+    width: 90%;
     height: 90%;
     background-color: white;
-    margin-top: 4rem;
 }
 
 .subgallery .content-holder {
@@ -75,24 +85,30 @@ button {
     width: 100%;
 }
 
-.description {
+.subgallery .description {
     display: flex;
     text-align: left;
     justify-content: space-between;
     align-items: baseline;
+    margin: 5rem auto;
 }
 
-.description .titles h2, 
-.description .titles p {
+.subgallery .description p {
+    font-size: 1.1em;
+    line-height: 1.5em;
     margin: 0;
 }
 
-.subgallery .inner-wrapper .project-images img, 
-.subgallery .inner-wrapper .description {
+.subgallery .description h2 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.subgallery .inner-wrapper .project-images img {
     margin: 3rem auto;
 }
 
-.subgallery .inner-wrapper .description .titles {
+.subgallery .inner-wrapper .description .title {
     width: 40%;
 }
 
